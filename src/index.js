@@ -1,5 +1,13 @@
 import _ from 'lodash';
-// import printMe from './load.js';
-import component from './load.js';
+import './style.css';
+import home from './load.js';
+import header from './header.js';
 
-document.body.appendChild(component());
+const navbar = document.querySelector('#header');
+
+navbar.appendChild(header());
+
+const content = document.querySelector('#content');
+
+content.appendChild(home());
+// content.appendChild(menu());

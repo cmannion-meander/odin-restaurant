@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./seating.jpg");
+    background-color: darkblue;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: #fafafa;
+    text-align: center;
+   }
+
+#header {
+    background-color: rgba(39, 172, 245, 0.5);
+    font-weight: bold;
+}
+
+.navbar {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 20vh;
+}
+
+.menuButton {
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px grey;
+    padding: 5px;
+}
+
+#content div{
+    height: 80vh;
+    background-color: rgba(39, 172, 245, 0.5);
+    box-shadow: 2px 2px 2px 1px grey;
+    display: grid;
+    padding: 5px;
+}

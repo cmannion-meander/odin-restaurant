@@ -1,17 +1,14 @@
-// export default function printMe() {
-//     console.log('I get called from print.js!');
-//   }
-
-export default function component() {
+export default function home() {
     const element = document.createElement('div');
-   const btn = document.createElement('button');
+    const header = document.createElement('h1');
+    const description = document.createElement('p');
+
+    header.textContent = "Ruby's Cafe"
  
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    description.textContent = "Welcome to Ruby's Cafe, where culinary artistry meets the charm of the North of England and the breathtaking flavors of the Brittany coast. Nestled in the heart of Winchester, our eclectic and upscale spot is a haven for food enthusiasts seeking a truly exceptional dining experience."
+
+    element.appendChild(header);
+    element.appendChild(description);
  
-   btn.innerHTML = 'Click me and check the console!';
-   btn.onclick = printMe;
- 
-   element.appendChild(btn);
- 
-  return element;
+    return element;
   }
